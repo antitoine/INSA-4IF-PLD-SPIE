@@ -11,7 +11,7 @@ cleanAll: clean
 	$(RM) *.pdf
 
 clean:
-	$(RM) *.toc *.log *.aux *.tdo
+	$(RM) *.toc *.log *.aux *.tdo *.lof *.lot
 
 build: buildMain
 

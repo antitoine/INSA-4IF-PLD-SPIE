@@ -24,8 +24,8 @@ mkpro:
 	$(ECHO) "Making specific : ${PRO}"
 	$(MKDIR) specific/${PRO}
 	$(MKDIR) specific/${PRO}/figures
-	$(CP) templates/Makefile specific/${PRO}/
-	$(CP) templates/main.tex specific/${PRO}/
+	$(CP) common/templates/Makefile specific/${PRO}/
+	$(CP) common/templates/main.tex specific/${PRO}/
 	$(ECHO) "Done !"
 
 rmpro:
