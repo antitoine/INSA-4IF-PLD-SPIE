@@ -1,17 +1,3 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES
-%----------------------------------------------------------------------------------------
-
-\documentclass[12pt]{article}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=1in,bmargin=0in,lmargin=1in,rmargin=1in}
-\usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
-\usepackage[T1]{fontenc}
-
-\usepackage{graphicx}
-\begin{document}
-
 \begin{titlepage}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % horizontal lines
@@ -33,8 +19,8 @@
 %----------------------------------------------------------------------------------------
 
 \HRule \\[0.4cm]
-{ \huge \bfseries Compte Rendu}\\[0.1cm]
-{\large \bfseries - Gestion des contacts commerciaux d'une banque -} 
+{ \huge \bfseries \mainTitle}\\[0.1cm]
+{\large \bfseries - \secondTitle -} 
 \HRule \\[1.5cm]
  
 %----------------------------------------------------------------------------------------
@@ -66,17 +52,28 @@ Paul \textsc{Dautry}
 \emph{Responsable Qualité} \\
 Antoine \textsc{Chabert}
 \end{center}
-\end{minipage}\\[5cm]
+\end{minipage}\\[1cm]
 
-H4401\\[2cm]
+H4401\\[1cm]
+
+%----------------------------------------------------------------------------------------
+%	CARTOUCHE
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{|m{0.3\textwidth}|m{0.3\textwidth}|m{0.3\textwidth}|}
+  \hline
+  \textbf{Auteurs du document} & \textbf{Relecteur} & \textbf{Responsable qualité} \\
+  \hline
+   & & \rule[0cm]{0cm}{5cm} \\
+  \hline
+\end{tabular} \\[2cm]
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
-\includegraphics[scale=0.3]{figures/logo.png}
+\includegraphics[scale=0.3]{../figures/logo.png}
 %----------------------------------------------------------------------------------------
 
 \vfill % Fill the rest of the page with whitespace
 
 \end{titlepage}
-\end{document}
