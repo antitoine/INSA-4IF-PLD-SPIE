@@ -12,6 +12,7 @@ diagram/*/*.png
 *.fls
 *.out
 *.toc
+*.pdf
 
 ## Intermediate documents:
 *.dvi
