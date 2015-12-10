@@ -2,8 +2,8 @@
 
 %%  ========   IMPORTANT ========
 %% Spécifier ici les variables pour le document
-\newcommand{\mainTitle}{Plan Assurance Qualité}
-\newcommand{\secondTitle}{Remplacer ici par le titre secondaire}
+\newcommand{\mainTitle}{\'Etude préalable - SPIE}
+\newcommand{\secondTitle}{Plan Assurance Qualité}
 \newcommand{\documentRef}{PAQ/4401/1}
 
 %%% Begin document
@@ -25,6 +25,35 @@
 %\section{Présentation du contenu du rapport}
 
 %\include{file} % Inclusion du fichier file.tex présent dans le même répertoire
+
+% ------------------ Première partie : contexte -----------------
+\part{Objectifs}
+\setcounter{section}{0}
+\include{objectif}
+% ------------------ Seconde partie : livrables -----------------
+\part{Domaine d’application}
+\setcounter{section}{0}
+\input{domaine_application}
+% ------------------ Troisième partie : méthodes et outils -----------------
+\part{Gestion de la documentation}
+\setcounter{section}{0}
+\include{gestion_documentation}
+% ------------------ Quatrième partie : activites, taches et planning -----------------
+\part{Cycle de vie des documents}
+\setcounter{section}{0}
+\include{cycle_vie_docs}
+% ------------------ Cinquième partie : organisation equipe -----------------
+\part{Contraintes de validation }
+\setcounter{section}{0}
+\include{contraintes_validation}
+% ------------------ Sixième partie : procedures de validation et recette -----------------
+\part{Outils utilisés}
+\setcounter{section}{0}
+\include{outils}
+% ------------------ Septième partie : livrables -----------------
+\part{Conclusion}
+\setcounter{section}{0}
+\include{conclusion}
 
 %%% End document
 \end{document}
