@@ -8,27 +8,25 @@
 
 %%% Begin document
 \begin{document}
-\input{../../common/title.tex}
+\input{../../common/title}
 
-\listoftodos
-\newpage
-\addcontentsline{toc}{part}{Tables des matières}
+%\listoftodos
+%\newpage
 \tableofcontents
-\addcontentsline{toc}{part}{Listes des figures}
 \listoffigures
-\addcontentsline{toc}{part}{Listes des tableaux}
-\listoftables
+%\listoftables
 \newpage
 %\addcontentsline{toc}{part}{Introduction}
 %\part{Introduction}
+%\setcounter{section}{0}
 %\section{Présentation du contenu du rapport}
 
-%\include{file} % Inclusion du fichier file.tex présent dans le même répertoire
+%\input{file} % Inclusion du fichier file.tex présent dans le même répertoire
 
 % ------------------ Première partie : contexte -----------------
 \part{Objet et contexte du projet}
 \setcounter{section}{0}
-\include{contexte}
+\input{contexte}
 % ------------------ Seconde partie : livrables -----------------
 \part{Descriptif des livrables du projet}
 \setcounter{section}{0}
@@ -36,23 +34,23 @@
 % ------------------ Troisième partie : méthodes et outils -----------------
 \part{Méthodes et Outils choisis}
 \setcounter{section}{0}
-\include{methodes_outils}
+\input{methodes_outils}
 % ------------------ Quatrième partie : activites, taches et planning -----------------
 \part{Activités, tâches et planning}
 \setcounter{section}{0}
-\include{activites_taches_planning}
+\input{activites_taches_planning}
 % ------------------ Cinquième partie : organisation equipe -----------------
 \part{Organisation de l'équipe}
 \setcounter{section}{0}
-\include{organisation_equipe}
+\input{organisation_equipe}
 % ------------------ Sixième partie : procedures de validation et recette -----------------
 \part{Procédures de validation et de recette}
 \setcounter{section}{0}
-\include{procedures_validation_recette}
+\input{procedures_validation_recette}
 % ------------------ Première partie : livrables -----------------
 \part{Gestion des risques}
 \setcounter{section}{0}
-\include{gestion_risques}
+\input{gestion_risques}
 
 %%% End document
 \end{document}
