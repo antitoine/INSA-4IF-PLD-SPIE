@@ -10,14 +10,12 @@ RM=@rm
 all: clean build show
 
 build:
-	$(MAKE) -C common/ build
 	$(MAKE) -C specific/ build
 
 show:
 	$(MAKE) -C specific/ show
 
 clean:
-	$(MAKE) -C common/ clean
 	$(MAKE) -C specific/ clean
 
 mkpro:
