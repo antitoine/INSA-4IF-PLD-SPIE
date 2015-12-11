@@ -188,3 +188,17 @@
       1000 sep={}
   },
 }
+
+%% Changement du style des \part
+\usepackage{titlesec}
+
+\titleclass{\part}{top} % make part like a chapter
+\titleformat{\part}
+[display]
+{\centering\normalfont\Huge\bfseries}
+{}
+{0pt}
+{\thepart~-~\huge\MakeUppercase}
+%
+\titlespacing*{\part}{0pt}{0pt}{20pt}
+%
