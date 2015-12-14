@@ -1,0 +1,34 @@
+\input{../../common/preambule}
+
+%%  ========   IMPORTANT ========
+%% Spécifier ici les variables pour le document
+\newcommand{\mainTitle}{\'Etude préalable - SPIE}
+\newcommand{\secondTitle}{Exercices ARIS}
+\newcommand{\documentRef}{EFA/4401/1}
+
+%%% Begin document
+\begin{document}
+\input{../../common/title}
+
+%% Commenter les deux lignes suivantes pour le document final
+\listoftodos
+\newpage
+
+%% Table de matière / figures / tableaux
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+% -------------------------------------------------- Exercices simples
+\part{Exercice simples}
+\setcounter{section}{0}
+\input{exercices_simples}
+
+% -------------------------------------------------- Exercices avancés
+\part{Exercices avancés}
+\setcounter{section}{0}
+\input{exercices_avances}
+
+%%% End document
+\end{document}
