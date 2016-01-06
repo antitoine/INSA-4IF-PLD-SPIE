@@ -1,0 +1,36 @@
+\input{../../common/preambule}
+
+%%  ========   IMPORTANT ========
+%% Spécifier ici les variables pour le document
+\newcommand{\mainTitle}{\'Etude préalable - SPIE}
+\newcommand{\secondTitle}{Rapport exercice SAP}
+\newcommand{\documentRef}{EFSAP/4401/1}
+
+%%% Begin document
+\begin{document}
+\input{../../common/title}
+
+%% Commenter les deux lignes suivantes pour le document final
+\listoftodos
+\newpage
+
+%% Table de matière / figures / tableaux
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+%% Faire une nouvelle partie :
+\part{Rapport}
+\setcounter{section}{0}
+\input{content}
+
+%% Inclure une figure :
+%\begin{figure}[H]
+%    \label{fig-LABEL-DE-LA-FIGURE}
+%    \noindent\makebox[\textwidth]{\includegraphics[width=10cm]{figures/NOM-DE-LA-FIGURE.png}}
+%    \caption{TEXTE DE LA LEGENDE}
+%\end{figure}
+
+%%% End document
+\end{document}

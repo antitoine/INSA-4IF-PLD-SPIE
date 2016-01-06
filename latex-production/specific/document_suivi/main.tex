@@ -1,0 +1,50 @@
+\input{../../common/preambule}
+
+%%  ========   IMPORTANT ========
+%% Spécifier ici les variables pour le document
+\newcommand{\mainTitle}{\'Etude préalable - SPIE}
+\newcommand{\secondTitle}{Document de suivi}
+\newcommand{\documentRef}{TB/4401/1}
+
+%%% Begin document
+\begin{document}
+\input{../../common/title}
+
+%% Commenter les deux lignes suivantes pour le document final
+%\listoftodos
+\newpage
+
+%% Table de matière / figures / tableaux
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+
+\part{Bilan phase d'Initialisation}
+
+Ce bilan a été rédigé le 13 décembre 2015. Le tableau de bord associé est pésent en Annexe A.
+
+\setcounter{section}{0}
+\input{bilan_13_12_2015}
+
+\part{Bilan phase d'Expression du Besoin - \'Etude de l'\'Existant}
+
+Ce bilan a été rédigé le 18 décembre 2015. Le tableau de bord associé est pésent en Annexe B.
+
+\setcounter{section}{0}
+\input{bilan_18_12_2015}
+
+
+\begin{appendices}
+
+\chapter{Tableau de Bord le 13/12/2015}
+\includepdf[pages=-]{tdbs/Tableau_de_Bord_13-12-15.pdf}
+
+\chapter{Tableau de Bord le 18/12/2015}
+\includepdf[pages=-]{tdbs/Tableau_de_Bord_18-12-15.pdf}
+
+\end{appendices}
+
+%%% End document
+\end{document}
