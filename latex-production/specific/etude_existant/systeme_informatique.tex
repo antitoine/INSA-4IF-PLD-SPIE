@@ -55,7 +55,6 @@ Développement Spécifique pour les besoins de SPIE.
         \item Gestion des notes de frais (saisis des frais liés aux intervention de maintenance, c’est à dire les déplacements ou bien les déjeuners) \\
     \end{itemize}
     \item \bf{Utilisateurs :} Techniciens de maintenance et service comptable. \\
-    \item \bf{Inconvénients :} Le but de ce logiciel est de gérer les heures des techniciens chaque semaine. Cependant, il n’est pas très souple et est utilisé en parallèle de macros excel. \\
 \end{description}
 
 \bf{Observations :} Il faudra fournir un logiciel de meilleur qualité permettant de s’affranchir de Excel.
@@ -74,7 +73,6 @@ Développement spécifique pour les besoins de SPIE.
         \item Données internes à l’équipe (heures dépensées par les équipes et coûts associés) \\
     \end{itemize}
     \item \bf{Utilisateurs :} Responsable d’affaires. \\
-    \item \bf{Inconvénients :} SUPRA est un application très ancienne héritant de l’ancien ERP de SPIE. Elle a donc subie de nombreuses modifications et présente des dysfonctionnements liées à ces évolutions. \\ répétées. 
 \end{description}
 
 \bf{Observations :} Certaines fonctions sont aussi présentes dans d’autres outils, il faudrait essayer de faire un peu de “ménage” pour garder que ce qui n’est pas répliqué ailleurs.
@@ -98,4 +96,38 @@ Globalement, l’architecture applicative de la gestion de la maintenance souffr
 
 \section{Architecture technique de SPIE Sud-Est}
 
-SPIE Sud-Est n'a pas accepté de diffuser les informations concernant les architectures techniques existantes. Nous sommes donc dans l'impossibilité de détailler cette dimension de l'étude de l'existant.
+SPIE ne nous a pas fourni d’informations quant à l’organisation de leur architecture technique actuelle. SPIE étant une entreprise de grande taille, nous pouvons supposer que celle-ci supportera les modifications à apporter au SI, étant donné la robustesse de leur SI déjà en place.
+Nous savons simplement que la société est orientée autour d’un serveur central auquel chaque filiale française du groupe se connecte.
+
+\section{Bilan des dysfonctionnements de l’existant applicatif et identification des attentes d’amélioration}
+
+\subsection{RHI/NdF}
+
+\noindent\textsc{Dysfonctionnements} : \\
+
+Cette application a pour but de gérer les heures hebdomadaires des techniciens, cependant cette dernière n’est utilisée que par le service gérant les rémunérations des employés. Selon certains responsables, cette application fait preuve de peu de souplesse. Ce manque de souplesse est comblé par des marcos Excel qu’ils utilisent. \\
+
+\noindent\textsc{Attentes d’amélioration} : \\
+
+Il faudrait avoir un outil de qualité intégrant les fonctionnalités que remplissent actuellement les macros qu’ils utilisent sur Excel.
+
+\subsection{SUPRA}
+
+
+\noindent\textsc{Dysfonctionnements} : \\
+
+SUPRA est un application très ancienne héritant de l’ancien ERP de SPIE. Elle a donc subie de nombreuses modifications et développements spécifiques et présente des dysfonctionnements liés à ces évolutions répétées. \\
+
+\noindent\textsc{Attentes d’amélioration} : \\
+
+Certaines fonctions sont aussi présentes dans d’autres outils, il faudrait essayer de faire un point sur les données gérées par l’application pour éviter la réplication de ces données avec d’autres applications.
+
+\subsection{SI Global}
+
+\noindent\textsc{Dysfonctionnements} : \\
+
+L’architecture actuelle de SPIE est constituée d’un ensemble d’applications qui communiquent les unes avec les autres. Cette disposition entraîne une multiplication des flux et les interdépendances entre les applications ne favorisent pas l’évolutivité du système d’information. \\
+
+\noindent\textsc{Attentes d’amélioration} : \\
+
+Le système d’information de SPIE gagnerait à être plus modulaire, car cela le doterait d’une meilleure évolutivité. Peut être qu’un travail d’intégration de ces fonctionnalités dans une architecture d’entreprise urbanisée permettrait d’atteindre ces objectifs.
