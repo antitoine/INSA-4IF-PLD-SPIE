@@ -72,9 +72,103 @@ Grâce à la recette des prestations travaux et contrat, le responsable d'affair
 
 \section{Description des données}
 
-\todo{Ajouter le tableau récapitulatif des données mise en jeu dans les processus}
+Commençons par souligner l’importance de quelques données capitales à la bonne gestion du processus de maintenance : \\
+
+\begin{description}
+\item \it{Données client :} Description du client, de son activité, ses coordonnées et diverses données à son propos.
+\item \it{Devis :} Chiffrage de l’offre.
+\item \it{Contrat :} Convention entre SPIE et son client.
+\item \it{Offre :} Description globale de la solution proposée (ainsi que son détail) suite à une opportunité que l’équipe a saisie.
+\end{description}
+
+Cependant, il existe de nombreuses autres données nécessaires à ce processus.
+
+\subsection{Données d’entrée}
+
+\begin{table}[H]
+    \centering
+    \caption{Tableau descriptif des données d'entrée}
+    \label{tab-donnees-entree}
+    \begin{tabular}{p{5.5cm}|p{10cm}}
+        \bf{Nom de la donnée d’entrée} & \bf{Description} \\ \hline
+        Critères de décision & Regroupe l’ensemble des critères permettant de prendre une décision \\
+        Opportunité de clientèle (PAC) & Plan d’actions commerciales lié à la clientèle de la société \\
+        Climat concurrentiel & Conditions dans lesquelles s’exerce la concurrence \\
+        Données collectées & Données collectées au début de la revue d’offre \\
+        Compléments d'informations client & Informations supplémentaires liées au client \\
+        Rapport d’analyse de risques & Rapport effectué à la suite de l’analyse des risques liés à l’offre \\
+        Document de gestion des risques & Indique la façon dont les risques (juridiques, commerciaux, techniques\dots) seront gérés et est établi grâce aux données client notamment \\
+        Courrier type de non-réponse & Courrier envoyé au client si l’offre ne sera pas poursuivie \\
+        Règlement de consultation & Permet de constituer un dossier de réponse \\
+        Dossier de réponse & Dossier envoyé au client suite à l’acceptation de l’offre \\
+        Dossier d’étude & Dossier à propos de l’offre \\
+        Données d’entreprise & Données liées à l’entreprise \\
+        Mémoire technique type & \\
+        Clauses contractuelles et juridiques & Clauses du contrat et de la justice de la filiale \\
+        Clauses commerciales & Clauses mettant en lumière les dispositions particulières des deux parties concernées par l’offre \\
+        Offre initiale & Offre lancée initialement par le client \\
+        Courrier d’accompagnement & Courrier accompagnant la transmission de l’offre \\
+        Dossier de commande & Dossier comprenant la commande \\
+        Liste des écarts & Ecarts par rapport à la commande originale \\
+        Plan d’action de validation & Plan d’action pour faire valider la commande \\
+        Liste des réserves & Liste des points sur lesquels il y a désaccord \\ 
+        Dossier contractuel & Dossier respectant le contrat \\
+        Informations de référencement & Permettent au service commercial de référencer le dossier correctement \\
+        Données internes & Consistuées de la QSE (Qualité Sécurité Environnement), documents de gestion, de RH\dots \\
+        Dossier de synthèse & Comprend les exigences contractuelles \\
+        Liste des ressources à mobiliser & Ressources présentant un intérêt pour l’affaire \\
+        Organigramme contractuel & Organigramme des personnes en lien avec le contrat \\ 
+        Planning du CR & Figure au compte-rendu de lancement \\
+        Spécifications clients & Demandes particulières du client \\
+        Rapport d’état des lieux & Rapport réalisé à la suite de l’état des lieux de la commande \\
+        PV de prise en charge & Procès verbal nécessaire à la réalisation de la commande \\
+        Commande de prestations & Prestations de service et travaux \\
+        Avenant au contrat & Acte juridique apportant des modifications sur le contrat \\
+        Travaux induits & Travaux supplémentaires induits par la commande \\
+        PAQ & Plan d’Assurance Qualité \\
+        Fiche d’ouverture de compte & \\
+        Preuve de respect de l’engagement & Prouve l’engagement de moyens ou de la tenue du résultat \\
+        PV de réception des travaux & Procès verbal poruvant la réception des travaux \\
+        Sysnthèse des exigences client & Ensemble des demandes spécifiques effectuées par le client \\
+        Cahier des charges & Cahier des charges des travaux induits \\
+        Fiche devis vierge & Fiche de devis attendant d’être remplie \\
+        Tableau de bord & Tableau de bord à propos de l’affaire et des différentes activités qui y sont liées \\
+        Données comptables Supra & “Supra” est le système utilisé pour la comptabilité \\
+        Bilan d’affaire & Bilan effectué à la suite d’une affaire menée à son terme afin de conserver un retour et éventuellement pouvoir reconduire l’affaire (avec ou sans modifications) \\
+        Liste des écarts & Ecarts constatés par le client entre la commande initiale et le résultat \\
+        CR état des lieux & Compte-rendu effectué à la suite de l’état des lieux de l’affaire \\
+        PV état des lieux & Procès verbal effectué à partir du CR d’état des lieux \\
+        Recette des prestations & Recette effectuée à partir des prestations travaux et du contrat
+    \end{tabular}
+\end{table}
+
+\subsection{Données de sortie}
+
+Nombre de données de sortie ont déjà été décrites dans les données d’entrée.
+
+\begin{table}[H]
+    \centering
+    \caption{Tableau descriptif des données d'entrée}
+    \label{tab-donnees-entree}
+    \begin{tabular}{p{5.5cm}|p{10cm}}
+        \bf{Nom de la donnée de sortie} & \bf{Description} \\ \hline
+        Données collectées & Ensemble des données rassemblées pour décider si l’opportunité sera saisie \\
+        Proposition de solution & Solution proposée au client pour son offre, avec un prix de revient \\
+    Solution et prix de vente & Solution et prix retenus par le client et la société \\
+        Données définitives & Données validées concernant l’affaire, incluant les réserves émises par le client \\
+        Devis signé & Devis signé par le client et les personnes en pouvoir \\
+        Documents d’exécution & Documents liés à la bonne réalisation des travaux induits (DOE, plans…)
+
+    \end{tabular}
+\end{table}
+
+\todo{Ajouter le MCD ici}
 
 \section{Structure organisationnelle}
 
-\todo{Ajouter un organigramme ARIS}
+\begin{figure}[H]
+    \label{fig-implem-spie}
+    \noindent\makebox[\textwidth]{\includegraphics[width=25cm,angle=90]{figures/spie_organigramme.png}}
+    \caption{Cartographie des implémentations de SPIE Sud-Est}
+\end{figure}
 
