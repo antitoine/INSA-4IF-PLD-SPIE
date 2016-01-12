@@ -1,12 +1,16 @@
+\section{Différence de modularité}
+
 Les processus de maintenance SPIE et SAP sont similaires sur de nombreux points. \\
 
-Le choix de SAP a été de rendre indépendants les processus de gestion des contrats clients permettant de créer et de gérer les contrats relatifs aux services ainsi que les processus de service et de réparation permettant au Service Client d’assurer des services de réparation et de maintenance. \\
+Le choix de SAP a été de rendre indépendant les processus de gestion des contrats client, permettant de créer et de gérer les contrats relatifs aux services, ainsi que les processus de service et de réparation, permettant au Service Client d’assurer de la réparation et de la maintenance. \\
 
-Chez SPIE, cela correspond à une séparation des processus visant à créer et valider la commande et à créer le contrat (Offre et revue d’offre, Négociation client, Revue de commande), et des processus d’exécution des services de maintenance (Lancement, Réalisation, Évolution du contrat, Solde de l’affaire et du contrat). Le scénario de vente et gestion des contrats SAP, plus générique, permet de gérer tous les aspects du contrat, depuis la création à la facturation, en passant par la prestation de services, le renouvellement et l’annulation et pour finir la cohérence financière. \\
+Chez SPIE, cela correspond à une séparation des processus visant à créer et valider la commande ainsi que le contrat (offre et revue d’offre, négociation client, revue de commande) et des processus d’exécution des services de maintenance (lancement, réalisation, évolution du contrat, solde de l’affaire et du contrat). Le scénario de vente et gestion des contrats SAP, plus générique, permet de gérer tous les aspects du contrat. De la création à la facturation, en passant par la prestation de services, le renouvellement et l’annulation et pour finir la cohérence financière. \\
 
-En ce qui concerne les opérations de maintenance, le scénario SAP comporte un processus de confirmation d’exécution d’un service, qui permet de faire un reporting détaillé des opérations de maintenance effectuées chez le client . Cela permet d'enregistrer des informations supplémentaires sur le travail exécuté, les causes profondes des problèmes causés par le produits, ou encore des feedbacks afin d’améliorer leur qualité. Cette phase est plus réduite dans le processus SPIE, ce qui rend l’accès au reporting plus difficile pour les techniciens. \\
+\section{Améliorations des opérations de maintenance}
 
-Le sous-processus SPIE "Lancement des prestations de service et travaux" ne traite pas les achats de pièces nécessaires pour la maintenance (les approvisionnements), contrairement au scénario SAP, qui comprend des fonctions de gestion des domaines liés supportant directement les prestations de service, telles que le stockage et l’inventaire des pièces de rechange. Il peut être utile ne pas se limiter à un standard pour cette phase du sous-processus de lancement afin d’estimer plus précisément les recettes de prestation. \\
+En ce qui concerne les opérations de maintenance, le scénario SAP comporte un processus de confirmation d’exécution d’un service, qui permet de faire un reporting détaillé des opérations de maintenance effectuées chez le client. Cela permet d'enregistrer des informations supplémentaires sur le travail exécuté, les causes profondes des problèmes causés par le produits ou encore des feedbacks afin d’améliorer leur qualité. Cette phase est plus réduite dans le processus SPIE, ce qui rend l’accès au reporting plus difficile pour les techniciens. \\
+
+Le sous-processus SPIE "Lancement des prestations de service et travaux" ne traite pas les achats de pièces nécessaires pour la maintenance (les approvisionnements), contrairement au scénario SAP, qui comprend des fonctions de gestion des domaines liés supportant directement les prestations de service, telles que le stockage et l’inventaire des pièces de rechange. Il peut être utile de ne pas se limiter à un standard pour cette phase du sous-processus de lancement, afin d’estimer plus précisément les recettes de prestation. \\
 
 Nous conseillons donc à SPIE d’inclure le processus \bf{Demande de résolution des contrats} pour pallier à cet éventuel manque que nous avons constaté dans les processus. \\
 
@@ -16,4 +20,4 @@ Nous conseillons donc à SPIE d’inclure le processus \bf{Demande de résolutio
     \caption{Demande de résolution des contrats}
 \end{figure}
 
-Ce processus démarre lorsqu’un client appelle ou envoie un email pour signaler un problème avec un produit ou un service. Après réception de la demande, un agent du centre de service crée une demande de service. L’agent parcours alors la base de connaissance pour trouver une solution qui conviendrait à la résolution du problème. S’il en trouve une, il l’envoie au client et finalise la demande de service.
+Ce processus démarre lorsqu’un client appelle ou envoie un email pour signaler un problème avec un produit ou un service. Après réception de la demande, un agent du centre de service créé une demande de service. L’agent parcours alors la base de connaissance pour trouver une solution qui conviendrait à la résolution du problème. S’il en trouve une, il l’envoie au client et finalise la demande de service.
