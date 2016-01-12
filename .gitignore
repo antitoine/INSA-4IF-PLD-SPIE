@@ -16,6 +16,8 @@ diagram/*/*.png
 *.png
 !latex-production/specific/*/figures/*.pdf
 !latex-production/specific/*/figures/*.png
+!latex-production/specific/*/figures/*/*.pdf
+!latex-production/specific/*/figures/*/*.png
 
 ## Intermediate documents:
 *.dvi
