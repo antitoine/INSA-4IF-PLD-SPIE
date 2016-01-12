@@ -11,8 +11,8 @@
 \input{../../common/title}
 
 %% Commenter les deux lignes suivantes pour le document final
-\listoftodos
-\newpage
+%\listoftodos
+%\newpage
 
 %% Table de matière / figures / tableaux
 \tableofcontents
@@ -21,20 +21,63 @@
 \newpage
 
 %% Faire une nouvelle partie :
-%\part{NOM DE LA PARTIE}
-%\setcounter{section}{0}
-%\section{NOM DU CHAPITRE / SECTION}
-%\subsection{NOM DU SOUS-CHAPITRE / SOUS-SECTION}
+\part{Thèmes des progrès fonctionnels}
+\setcounter{section}{0}
+\input{progres_fonctionnels}
 
-%% Inclure un document LaTeX :
-%\input{file}
+\part{Thèmes des progrès techniques}
+\setcounter{section}{0}
+\input{progres_techniques}
 
-%% Inclure une figure :
-%\begin{figure}[H]
-%    \label{fig-LABEL-DE-LA-FIGURE}
-%    \noindent\makebox[\textwidth]{\includegraphics[width=10cm]{figures/NOM-DE-LA-FIGURE.png}}
-%    \caption{TEXTE DE LA LEGENDE}
-%\end{figure}
+%% ANNEXES ---------------------------------------------------------------------------
+
+\appendix
+\chapter{Modèle Conceptuel de Données de la cible}
+
+\begin{figure}[H]
+    \label{fig-mcd-cible}
+    \noindent\makebox[\textwidth]{\includegraphics[width=10cm]{figures/mcd_cible.png}}
+    \caption{Modèle conceptuel de données de la cible}
+\end{figure}
+
+\chapter{Modèle ARIS de la cible}
+
+\begin{figure}[H]
+    \label{fig-commande-revue}
+    \noindent\makebox[\textwidth]{\includegraphics[width=10cm]{figures/aris/commande_revue_de_commande.png}}
+    \caption{Commande et Revue de Commande}
+\end{figure}
+
+\begin{figure}[H]
+    \label{fig-evol-contrat}
+    \noindent\makebox[\textwidth]{\includegraphics[width=10cm]{figures/aris/evolution_contrat.png}}
+    \caption{Processus Evolution du Contrat}
+\end{figure}
+
+\begin{figure}[H]
+    \label{fig-lancement}
+    \noindent\makebox[\textwidth]{\includegraphics[width=10cm]{figures/aris/lancement_presatations_de_services_et_travaux_avec_roles.png}}
+    \caption{Processus Lancement des Prestations de Services et Travaux avec rôles}
+\end{figure}
+
+\begin{figure}[H]
+    \label{fig-offre-revue}
+    \noindent\makebox[\textwidth]{\includegraphics[width=10cm]{figures/aris/offre_revue_doffre.png}}
+    \caption{Processus Offre et Revue d'Offre}
+\end{figure}
+
+\begin{figure}[H]
+    \label{fig-real-prest}
+    \noindent\makebox[\textwidth]{\includegraphics[width=14cm]{figures/aris/realisation_de_prestations_de_maintenance.png}}
+    \caption{Processus Réalisation Prestations de Maintenance}
+\end{figure}
+
+\begin{figure}[H]
+    \label{fig-solde-affaire}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/aris/solde_de_laffaire_et_du_contrat.png}}
+    \caption{Processus Solde de l'Affaire et du Contrat}
+\end{figure}
+
 
 %%% End document
 \end{document}
