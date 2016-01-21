@@ -10,7 +10,11 @@ Cette solution nécessitera néanmoins un travail d’ampleur pour développer l
     
 La phase de  développement devra commencer par la concevoir le modèle de données commun (Common Data Model) et de mettre en place le bus. Une fois cette première étape terminée, la suivante consistera à développer les adaptateurs pour les applications existantes. Chaque adaptateur pourra être développer en parallèle car il est spécifique au bloc le concernant. L’ultime étape de développement pourra être la réalisation des nouveaux blocs et de leurs interfaces avec le bus. Ces deux dernières phases pourront être réalisées en parallèle chaque tâche les constituant pouvant elle même être parallélisée. \\
 
-\todo{Insérer schema intégration des blocs}
+\begin{figure}[H]
+    \label{fig-bus}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/schema_integration.png}}
+    \caption{Schéma de la structure d'intégration théorique}
+\end{figure}
 
 \subsection{Problématiques}
 
@@ -26,7 +30,11 @@ Enfin il est important de noter que le changement de comportement d’une applic
 
 Afin d’intégrer les différentes solutions permettant de répondre aux problèmes soulevés par les trois axes nous allons mettre en place un middleware d’intégration entre le logiciel PeopleSoft et les nouvelles solutions qui seront mises en place. Cela aura deux avantages majeurs, le premier étant la garantie de l’évolutivité du système mis en place et le second la normalisation des échanges entre les nouveaux composants. Le schéma suivant présente les différents composants à mettre en place.
 
-\todo{Insérer schéma bus theorique}
+\begin{figure}[H]
+    \label{fig-bus-theo}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/schema_integration_theorique.png}}
+    \caption{Schéma de la structure d'intégration théorique}
+\end{figure}
 
 On constate sur ce schéma différents éléments qu’il sera nécessaire de développer. Il faudra développer l’intégralité des composants de type “Adaptateur” pour chaque solution à base de brique existante et pour l’existant c’est-à-dire l’ensemble PeopleSoft et les applicatifs qui gravitent autour. Lors de la réalisation d’une solution intégralement développée il sera nécessaire que celle-ci intègre directement le protocole de communication sur le bus afin de ne pas ajouter le développement d’un adaptateur. \\
     

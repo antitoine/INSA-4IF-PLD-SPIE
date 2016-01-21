@@ -114,11 +114,19 @@ Technicien \\
 
 Les services dégagés précédemment répondant à un axe d’amélioration commun, concernant les retours d’expérience, un nouveau bloc applicatif apparaît. Intitulé “Outil REX”, ce bloc permet de regrouper les différents services répondant aux cas d’utilisation liés aux retours d’expérience. Ces cas d’utilisation nécessitant de communiquer avec la base de données, un acteur supplémentaire se doit alors d’être ajouté, comme représenté sur le schéma ci-dessous.
 
-\todo{Insérer UC bloc applicatif REX ici}
+\begin{figure}[H]
+    \label{fig-uc-rex}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/uc_bloc_rex.png}}
+    \caption{Diagramme des cas d'utilisation de l'outil REX}
+\end{figure}
 
 Le bloc “Outil REX” utilisant les données relatives aux contrats de maintenance, une communication depuis le bloc applicatif “ADV” est nécessaire. De même, l’accès aux informations reliées aux prestations de maintenance étant nécessaire pour renseigner les retours d’expérience, un transfert de données depuis le bloc “CLARIFY” est également présent. Enfin, les retours d’expériences concernent à la fois les techniciens qui les saisissent suite à leurs prestations de maintenance, mais également les commerciaux et les responsables d’affaires qui souhaitent suivre les informations disponibles sur les retours d’expérience. De fait, une communication avec le bloc “People Soft” et “SUPRA” est également nécessaire.
 
-\todo{Insérer dépendances bloc applicatif REX ici}
+\begin{figure}[H]
+    \label{fig-dep-rex}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/dependances_bloc_rex.png}}
+    \caption{Schéma des interdépendances de l'outil REX}
+\end{figure}
 
 \subsection{Gestion des données}
 
@@ -144,7 +152,11 @@ A1-UC3 \\
 
 Le bloc applicatif “Outil REX” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
 
-\todo{Insérer le MCD REX}
+\begin{figure}[H]
+    \label{fig-om-rex}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/om_rex.png}}
+    \caption{Modèle Conceptuel de Données de l'outil REX}
+\end{figure}
 
 \subsubsection{Représentation de la donnée}
 
@@ -152,7 +164,11 @@ Afin de garantir l’efficacité la base de connaissance il sera sans doute néc
 
 Concernant l’ontologie à utiliser,  nous proposons d’utiliser l’ontologie IMAMO (Industrial MAintenance Management Ontology) qui a été formalisée par Mohamed Hedi Karray. Cette ontologie est décrite dans la figure suivante. 
 
-\todo{Insérer le dessin du vocabulaire IMAMO}
+\begin{figure}[H]
+    \label{fig-imamo}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/imamo_ontology.png}}
+    \caption{Vocabulaire de l'ontologie IMAMO}
+\end{figure}
 
 Cette ontologie permettra de définir classer les différentes ressources dans la base de connaissances. Il sera éventuellement nécessaire d’enrichir cette ontologie. Pour administrer cette base de connaissance on pourra utiliser Web Idea Tree\footnote{http://www.webideatree.com/} (WIT).
 
@@ -276,11 +292,19 @@ Responsable d’affaires ou Commercial \\
 
 Le bloc applicatif “Outil PERF” permet de regrouper les différents services répondant aux cas d’utilisation liés à la mise en place des indicateurs de performance et la standardisation des processus liés. Ce bloc doit également interagir avec une base de données et c’est pourquoi cet acteur apparaît sur le schéma ci-dessous. D’un point de vue humain, seuls les commerciaux et les responsables d’affaires sont concernés par cet outil qui exploitent également les données issues de l’outil REX précédemment introduit.
 
-\todo{Insérer UC bloc applicatif PERF ici}
+\begin{figure}[H]
+    \label{fig-uc-perf}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/uc_bloc_perf.png}}
+    \caption{Diagramme des cas d'utilisation de l'outil PERF}
+\end{figure}
 
 Les dépendances du bloc “Outil PERF” vis à vis des blocs existant et des nouveaux blocs sont décrites dans le schéma suivant. Celles-ci sont nombreuses et traduisent les besoins tels que la communication avec “Calrify” pour la récupération des données de maintenance mais aussi les outils “ADV” et “SUPRA” concernant respectivement les informations relatives aux ventes et aux responsables d’affaires. Pour finir, ce bloc nécessite aussi la prise en compte des nouvelles informations apportées par le bloc “Outil REX” introduit dans la partie précédente.
 
-\todo{Insérer dépendances bloc applicatif PERF ici}
+\begin{figure}[H]
+    \label{fig-dep-perf}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/dependances_bloc_perf.png}}
+    \caption{Schéma des interdépendances de l'outil PERF}
+\end{figure}
 
 \subsection{Gestion des données}
 
@@ -303,7 +327,11 @@ Les différents cas d’utilisation décrits précédemment permettent d’ident
 
 Le bloc applicatif “Outil PERF” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
 
-\todo{Insérer le MCD PERF}
+\begin{figure}[H]
+    \label{fig-om-perf}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/om_perf.png}}
+    \caption{Modèle Conceptuel de Données de l'outil PERF}
+\end{figure}
 
 \subsubsection{Représentation de la donnée}
 
@@ -423,11 +451,19 @@ Technicien ou Responsable d’affaires \\
 
 Le bloc “Outil RISQUE”, comme les deux précédents, requiert un accès à la base de données pour mettre à jour les indices qu’il permet de calculer. Il doit également pouvoir accéder aux informations alimentant ces calculs. Le schéma intitulé “Cas d’Utilisation : Bloc “Outil RISQUE”” présente donc l’acteur base de données. Ce bloc concerne tous les utilisateurs, c’est-à-dire les commerciaux, les responsables d’affaires et les techniciens car il propose un panel de fonctionnalités relativement large.
 
-\todo{Insérer UC bloc applicatif RISQUE ici}
+\begin{figure}[H]
+    \label{fig-uc-risque}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/uc_bloc_risque.png}}
+    \caption{Diagramme des cas d'utilisation de l'outil RISQUE}
+\end{figure}
 
 Concernant la communication de du bloc “Outil RISQUE” avec les blocs existant et les deux blocs introduits précédemment nous constatons que les liens sont similaires. En effet, ce module requiert des informations provenant des autres blocs et notamment des connaissances recueillies auprès des différents acteurs humains par le biais des outils. Il est important de noter que cela se répercutera également sur l’architecture applicative et l’infrastructure à développer. Certains éléments de ces architectures pourrons évidemment être mutualisés pour répondre au besoin. La mutualisation présente de nombreux avantages, en particuliers sur le plan financier.
 
-\todo{Insérer dépendances bloc applicatif RISQUE ici}
+\begin{figure}[H]
+    \label{fig-dep-risque}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/dependances_bloc_risque.png}}
+    \caption{Schéma des interdépendances de l'outil RISQUE}
+\end{figure}
 
 \subsection{Gestion des données}
 
@@ -451,7 +487,11 @@ Les différents cas d’utilisation décrits précédemment permettent d’ident
 
 Le bloc applicatif “Outil RISQUE” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
 
-\todo{Insérer le MCD RISQUE}
+\begin{figure}[H]
+    \label{fig-om-risque}
+    \noindent\makebox[\textwidth]{\includegraphics[width=12cm]{figures/om_risque.png}}
+    \caption{Modèle Conceptuel de Données de l'outil RISQUE}
+\end{figure}
 
 \subsubsection{Représentation de la donnée}
 
