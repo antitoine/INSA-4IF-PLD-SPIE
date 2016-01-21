@@ -83,7 +83,32 @@ Technicien \\
 
 \subsubsection{Services}
 
-\todo{Compléter cette section}
+\begin{description}
+    \item[\textbullet] Rechercher un contrat par référence (identifiant unique) \\
+        \it{Description succincte :} ce service permet de récupérer un contrat en utilisant sa référence pour effectuer la recherche. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Rechercher un contrat par le nom de la société dans lequel il intervient \\
+        \it{Description succincte :} ce service permet de récupérer un contrat en utilisant le nom de la société pour effectuer la recherche. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Récupérer les commandes associées à une référence d’un contrat  \\
+        \it{Description succincte :} ce service permet de récupérer les commandes associées à un contrat en utilisant la référence de ce dernier. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Rechercher une commande par sa référence \\
+        \it{Description succincte :} ce service permet de récupérer une commande en utilisant sa référence. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Récupérer les prestations de maintenance associées à une référence d’une commande \\
+        \it{Description succincte :} ce service permet de récupérer les prestations de maintenance en utilisant la référence de la commande associée  \\
+        \it{Complexité :} \bf{simple}. 
+    \item[\textbullet] Rechercher une prestation de maintenance par sa référence \\
+        \it{Description succincte :} ce service permet de récupérer une prestation de maintenance en utilisant sa référence. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Mise à jour d’une prestation de maintenance \\
+        \it{Description succincte :} ce service permet la mise à jour d’une prestation de maintenance en exploitant les saisies de l’utilisateur. \\
+        \it{Complexité :} \bf{moyen}.
+    \item[\textbullet] Ajouter un document à la prestation de maintenance \\
+        \it{Description succincte :} ce service permet de téléverser un document et de l’associer à une prestation de maintenance. \\
+        \it{Complexité :} \bf{moyen}.
+\end{description}
 
 \subsubsection{Identification du bloc applicatif}
 
@@ -182,7 +207,38 @@ Responsable d’affaires ou Commercial \\
 
 \subsubsection{Services}
 
-\todo{Compléter cette section}
+\begin{description}
+    \item[\textbullet] Rechercher un contrat par référence (identifiant unique) \\
+        \it{Description succincte :} ce service permet de récupérer un contrat en utilisant sa référence pour la recherche. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Rechercher un contrat par le nom de la société dans lequel il intervient \\
+        \it{Description succincte :} ce service permet de récupérer un contrat en utilisant le nom de la société pour la recherche. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Récupérer les commandes associées à une référence d’un contrat  \\
+        \it{Description succincte :} ce service permet de récupérer les commandes en utilisant la référence du contrat qui leur est associé. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Récupérer les prestations de maintenance associées à une référence d’une commande \\
+        \it{Description succincte :} ce service permet de récupérer les prestations de maintenance en utilisant la référence de la commande associée.  \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Calculer l’estimation du bénéfice du contrat \\
+        \it{Description succincte :} ce service permet de calculer l’estimation du bénéfice d’un contrat à partir des données du SI. \\
+        \it{Complexité :} \bf{moyen}.
+    \item[\textbullet] Actualiser les indicateurs de performance d’un contrat \\
+        \it{Description succincte :} ce service permet d’actualiser les indicateurs du contrat à partir des informations contenues dans le SI. \\
+        \it{Complexité :} \bf{moyen} à \bf{complexe}.
+    \item[\textbullet] Générer un rapport sur les indicateurs du contrat \\
+        \it{Description succincte :} ce service permet de générer un rapport de synthèse des indicateurs. \\
+        \it{Complexité :} \bf{moyen} à \bf{complexe}.
+    \item[\textbullet] Calculer la durée moyenne de toutes les prestations de maintenance d’un contrat \\
+        \it{Description succincte :} ce service permet de calculer, à partir des données du SI, la durée moyenne des prestations de maintenance. \\
+        \it{Complexité :} \bf{moyen}.
+    \item[\textbullet] Récupérer les prestations de maintenance qui ont demandées le plus de temps \\
+        \it{Description succincte :} ce service permet de récupérer les prestations de maintenance qui ont durée le plus longtemps en utilisant un seuil minimal. \\
+        \it{Complexité :} \bf{moyen}.
+    \item[\textbullet] Récupérer les prestations de maintenance qui ont demandées le moins de temps \\
+        \it{Description succincte :} ce service permet de récupérer les prestations de maintenance qui ont durée le moins longtemps en utilisant un seuil maximal. \\
+        \it{Complexité :} \bf{moyen}.
+\end{description}
 
 \subsubsection{Identification du bloc applicatif}
 
@@ -283,7 +339,32 @@ Technicien ou Responsable d’affaires \\
 
 \subsubsection{Services}
 
-\todo{Compléter cette section}
+\begin{description}
+    \item[\textbullet] Rechercher un contrat par référence (identifiant unique) \\
+        \it{Description succincte :} ce service permet de récupérer un contrat en utilisant sa référence pour la recherche. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Rechercher un contrat par le nom de la société dans lequel il intervient \\
+        \it{Description succincte :} ce service permet de de récupérer un contrat de maintenance en utilisant le nom de la société pour la recherche. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Calculer l’indice de niveau de sécurité du contrat \\
+        \it{Description succincte :} ce service permet de calculer l’indice de niveau de sécurité à partir des informations présentes dans le SI. \\
+        \it{Complexité :} \bf{complexe}.
+    \item[\textbullet] Calculer l’indice de risque du contrat \\
+        \it{Description succincte :} ce service permet de calculer l’indice de risque à partir des informations présentes dans le SI. \\
+        \it{Complexité :} \bf{complexe}.
+    \item[\textbullet] Rechercher une solution par des mots-clés \\
+        \it{Description succincte :} ce service permet de récupérer des solutions contenant des mots-clés ou liées à des concepts présent dans la recherche. \\
+        \it{Complexité :} \bf{moyen} à \bf{complexe}.
+    \item[\textbullet] Rechercher une solution par son identifiant \\
+        \it{Description succincte :} ce service permet de récupérer une solution en utilisant son identifiant pour effectuer la rechercher. \\
+        \it{Complexité :} \bf{simple}.
+    \item[\textbullet] Créer une nouvelle solution à un problème \\
+        \it{Description succincte :} ce service permet d’éditer une nouvelle solution à un problème répertorié en exploitant les saisies de l’utilisateur. \\
+        \it{Complexité :} \bf{moyen}.
+    \item[\textbullet] Modifier une solution présente dans la base de connaissance \\
+        \it{Description succincte :} ce service permet de modifier une solution précédemment ajoutée \\
+        \it{Complexité :} \bf{moyen}.
+\end{description}
 
 \subsubsection{Identification du bloc applicatif}
 
