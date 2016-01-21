@@ -112,7 +112,13 @@ Technicien \\
 
 \subsubsection{Identification du bloc applicatif}
 
-\todo{Compléter cette section}
+Les services dégagés précédemment répondant à un axe d’amélioration commun, concernant les retours d’expérience, un nouveau bloc applicatif apparaît. Intitulé “Outil REX”, ce bloc permet de regrouper les différents services répondant aux cas d’utilisation liés aux retours d’expérience. Ces cas d’utilisation nécessitant de communiquer avec la base de données, un acteur supplémentaire se doit alors d’être ajouté, comme représenté sur le schéma ci-dessous.
+
+\todo{Insérer UC bloc applicatif REX ici}
+
+Le bloc “Outil REX” utilisant les données relatives aux contrats de maintenance, une communication depuis le bloc applicatif “ADV” est nécessaire. De même, l’accès aux informations reliées aux prestations de maintenance étant nécessaire pour renseigner les retours d’expérience, un transfert de données depuis le bloc “CLARIFY” est également présent. Enfin, les retours d’expériences concernent à la fois les techniciens qui les saisissent suite à leurs prestations de maintenance, mais également les commerciaux et les responsables d’affaires qui souhaitent suivre les informations disponibles sur les retours d’expérience. De fait, une communication avec le bloc “People Soft” et “SUPRA” est également nécessaire.
+
+\todo{Insérer dépendances bloc applicatif REX ici}
 
 \subsection{Gestion des données}
 
@@ -242,7 +248,13 @@ Responsable d’affaires ou Commercial \\
 
 \subsubsection{Identification du bloc applicatif}
 
-\todo{Compléter cette section}
+Le bloc applicatif “Outil PERF” permet de regrouper les différents services répondant aux cas d’utilisation liés à la mise en place des indicateurs de performance et la standardisation des processus liés. Ce bloc doit également interagir avec une base de données et c’est pourquoi cet acteur apparaît sur le schéma ci-dessous. D’un point de vue humain, seuls les commerciaux et les responsables d’affaires sont concernés par cet outil qui exploitent également les données issues de l’outil REX précédemment introduit.
+
+\todo{Insérer UC bloc applicatif PERF ici}
+
+Les dépendances du bloc “Outil PERF” vis à vis des blocs existant et des nouveaux blocs sont décrites dans le schéma suivant. Celles-ci sont nombreuses et traduisent les besoins tels que la communication avec “Calrify” pour la récupération des données de maintenance mais aussi les outils “ADV” et “SUPRA” concernant respectivement les informations relatives aux ventes et aux responsables d’affaires. Pour finir, ce bloc nécessite aussi la prise en compte des nouvelles informations apportées par le bloc “Outil REX” introduit dans la partie précédente.
+
+\todo{Insérer dépendances bloc applicatif PERF ici}
 
 \subsection{Gestion des données}
 
@@ -368,7 +380,13 @@ Technicien ou Responsable d’affaires \\
 
 \subsubsection{Identification du bloc applicatif}
 
-\todo{Compléter cette section}
+Le bloc “Outil RISQUE”, comme les deux précédents, requiert un accès à la base de données pour mettre à jour les indices qu’il permet de calculer. Il doit également pouvoir accéder aux informations alimentant ces calculs. Le schéma intitulé “Cas d’Utilisation : Bloc “Outil RISQUE”” présente donc l’acteur base de données. Ce bloc concerne tous les utilisateurs, c’est-à-dire les commerciaux, les responsables d’affaires et les techniciens car il propose un panel de fonctionnalités relativement large.
+
+\todo{Insérer UC bloc applicatif RISQUE ici}
+
+Concernant la communication de du bloc “Outil RISQUE” avec les blocs existant et les deux blocs introduits précédemment nous constatons que les liens sont similaires. En effet, ce module requiert des informations provenant des autres blocs et notamment des connaissances recueillies auprès des différents acteurs humains par le biais des outils. Il est important de noter que cela se répercutera également sur l’architecture applicative et l’infrastructure à développer. Certains éléments de ces architectures pourrons évidemment être mutualisés pour répondre au besoin. La mutualisation présente de nombreux avantages, en particuliers sur le plan financier.
+
+\todo{Insérer dépendances bloc applicatif RISQUE ici}
 
 \subsection{Gestion des données}
 
