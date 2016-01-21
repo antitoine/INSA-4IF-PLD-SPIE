@@ -124,21 +124,35 @@ Le bloc “Outil REX” utilisant les données relatives aux contrats de mainten
 
 \subsubsection{Objets métiers}
 
-\todo{Compléter cette section}
+Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci, permettant dans le même temps de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
+
+\todo{Insérer la table des OM REX}
+
+Le bloc applicatif “Outil REX” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
+
+\todo{Insérer le MCD REX}
 
 \subsubsection{Représentation de la donnée}
 
-\todo{Compléter cette section}
+Afin de garantir l’efficacité la base de connaissance il sera sans doute nécessaire de mettre en place ou de réutiliser une ontologie de la maintenance. Cette base de connaissance permettra de transmettre plus efficacement l’information au sein des processus de SPIE mais aussi facilitera la tâche des techniciens et l’accès à cette dernière. Le stockage de la connaissance utilisant ce modèle permet, en effet, de proposer des résultats de recherche plus pertinents aux utilisateurs du système en intégrant les aspects sémantiques du métier. \\
+
+Concernant l’ontologie à utiliser,  nous proposons d’utiliser l’ontologie IMAMO (Industrial MAintenance Management Ontology) qui a été formalisée par Mohamed Hedi Karray. Cette ontologie est décrite dans la figure suivante. 
+
+\todo{Insérer le dessin du vocabulaire IMAMO}
+
+Cette ontologie permettra de définir classer les différentes ressources dans la base de connaissances. Il sera éventuellement nécessaire d’enrichir cette ontologie. Pour administrer cette base de connaissance on pourra utiliser Web Idea Tree (WIT).
+
+\todo{footnote manquante sur WIT}
 
 \subsection{Infrastructure}
 
-\subsubsection{Solution retenue}
+Concernant l’infrastructure nécessaire pour supporter cette solution il sera nécessaire de fournir au technicien le matériel mobile équipé de l’application permettant de faire les REX. Afin de collecter les différents retours saisis par les techniciens, il sera nécessaire de mettre en place une infrastructure sous forme de serveurs de données  et d’applications. 
 
-\todo{Compléter cette section}
+Les serveurs de données seront utilisés pour stocker les informations recueillies par l’application et pourront éventuellement être partagés avec les autres applications utilisées par SPIE. En effet, la mutualisation des ressources est un moyen intéressant pour réduire les dépenses si la charge des serveurs le permet.
 
-\subsubsection{Déploiement de la solution}
+Les serveurs d’applications pourront eux aussi être mutualisés et devront héberger l’application proposant une API pour l’application qui permet de recueillir les REX. Celle-ci devra proposer l’intégralité des services requis par l’application pour les différents cas d’utilisation.
 
-\todo{Compléter cette section}
+La solution technique retenue pour développer l’application mobile pourra être Telerik qui permet de développer rapidement. Concernant le “back-end” un simple serveur HTTP avec des services développés en PHP, ou technologie équivalente (NodeJS, J2E…), suffira. Pour le stockage une solution de type base de données relationnelle MySQL bien administrée conviendra.
 
 % --------------------------- PERF
 \section{Analyse des Performances (PERF)}% --------------------------- PERF
@@ -260,21 +274,25 @@ Les dépendances du bloc “Outil PERF” vis à vis des blocs existant et des n
 
 \subsubsection{Objets métiers}
 
-\todo{Compléter cette section}
+Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci, permettant dans le même temps de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
+
+\todo{Insérer la table des OM PERF}
+
+Le bloc applicatif “Outil PERF” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
+
+\todo{Insérer le MCD PERF}
 
 \subsubsection{Représentation de la donnée}
 
-\todo{Compléter cette section}
+Toutes les données stockées concernant les contrats devront pouvoir être accédées par l’application qui sera chargée d’agréger ces données pour réaliser des statistiques qui alimenteront les différents tableaux de bord. La mise en place d’un entrepôt de données alimenté par les autres applicatifs doit être envisagée pour aller dans ce sens. \\
+
+Il sera également nécessaire de concevoir les hypercubes associés afin de pouvoir exploiter ces données. Pour parvenir à ce résultat, SPIE devra faire l’acquisition des outils permettant de manipuler ces données, Pentaho par exemple. 
 
 \subsection{Infrastructure}
 
-\subsubsection{Solution retenue}
+Le stockage des données nécessitera une infrastructure conséquente garantissant une bonne qualité de service et permettant éventuellement des opérations de réplication pour protéger SPIE d’une perte importante de données. \\
 
-\todo{Compléter cette section}
-
-\subsubsection{Déploiement de la solution}
-
-\todo{Compléter cette section}
+Les dispositions à prendre pour mettre en place une telle infrastructure sont les suivantes. Acquérir plusieurs serveurs de données et les configurer de sorte à mettre en place la réplication. Concernant la localisation de ces serveurs, il serait judicieux de les placer en divers endroits si possible avec des alimentation électriques distinctes et redondantes. 
 
 % --------------------------- RISQUE
 \section{Analyse des Risques (RISQUE)}% --------------------------- RISQUE
@@ -392,18 +410,20 @@ Concernant la communication de du bloc “Outil RISQUE” avec les blocs existan
 
 \subsubsection{Objets métiers}
 
-\todo{Compléter cette section}
+Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci, permettant dans le même temps de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
+
+\todo{Insérer la table des OM RISQUE}
+
+Le bloc applicatif “Outil RISQUE” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
+
+\todo{Insérer le MCD RISQUE}
 
 \subsubsection{Représentation de la donnée}
 
-\todo{Compléter cette section}
+Du point de vue de la gestion des données, celle-ci est étroitement liée à l’axe concernant les REX. En effet, la prédiction des risques nécessite de se baser sur des connaissances accumulées au cours des différentes activités menées dans le cadre de ces projets pour anticiper, dans la mesure du possible, les problèmes qui peuvent être rencontrés lors du déroulement du projet.
+
+Nous conseillons donc de vous reporter au paragraphe correspondant dans la section de l’axe d’amélioration associé.
 
 \subsection{Infrastructure}
 
-\subsubsection{Solution retenue}
-
-\todo{Compléter cette section}
-
-\subsubsection{Déploiement de la solution}
-
-\todo{Compléter cette section}
+Cette solution nécessite de mettre en place une interface simple permettant d’accéder facilement à l’ensemble des connaissances répertoriées dans cette base. Cette interface pourrait s’appuyer sur une application web hébergée sur un des serveurs d’application de SPIE Sud-Est. Ce serveur pourra être un serveur mutualisé.
