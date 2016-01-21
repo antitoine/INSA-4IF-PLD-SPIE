@@ -1,0 +1,310 @@
+% --------------------------- REX
+\section{Retour d'Expérience (REX)} % --------------------------- REX
+% --------------------------- REX
+
+\subsection{Spécifications fonctionnelles}
+
+\subsubsection{Cas d’utilisations}
+
+% #############################################
+\noindent\textsc{\bf{A1 - UC1 :} Consulter une prestation de maintenance}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+Pendant une intervention, le technicien souhaite accède à l’historique du dossier pour une prestation de maintenance donné. \\
+
+\noindent\textsc{Utilisateur :}\\
+
+Technicien ou Responsable d’affaires ou Commercial \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item   L’utilisateur fait une recherche avec la référence d’un contrat ou le nom d’une société
+    \item   Le système affiche la liste des contrats pouvant correspondre
+    \item   L’utilisateur sélectionne son contrat
+    \item   Le système affiche l’état actuel du contrat avec la liste des commandes
+    \item   L’utilisateur sélectionne la commande correspondant à son intervention
+    \item   Le système affiche l’état actuel de la commande avec la liste des prestations de maintenance
+    \item   L’utilisateur sélectionne la prestation de maintenance correspondant à l’intervention
+    \item   Le système retourne la prestation de maintenance et les pièces jointes qui lui sont associées \\
+\end{enumerate}
+\noindent\textsc{Scénarii alternatifs :} \\
+\begin{enumerate}
+    \item L’utilisateur fait une recherche avec la référence de la commande
+    \begin{enumerate}
+        \item Le système affiche la liste des commandes pouvant correspondre à la recherche
+        \item On reprend le scénario nominal à l’étape de 5 \\
+    \end{enumerate}
+    \item L’utilisateur fait une recherche avec la référence de la prestation de maintenance
+    \begin{enumerate}
+        \item Le système affiche la liste des prestations de maintenance pouvant correspondre à la recherche
+        \item On reprend le scénario nominal à l’étape 7
+    \end{enumerate}
+\end{enumerate}
+\end{shaded}
+% #############################################
+\noindent\textsc{\bf{A1 - UC2 :} Saisir le retour d’expérience}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+Après une prestation de maintenance effectuée par un technicien, il peut rentrer un résumé et les détails sur cette dernière dans une base de connaissance. \\
+
+\noindent\textsc{Utilisateur :} \\
+
+Technicien \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur consulte une prestation de maintenance (A1 - UC1) et demande une saisie de retour d’expérience
+    \item Le système demande à l’utilisateur de saisir les informations sur son retour d’expérience
+    \item L’utilisateur renseigne les différents champs et valide la saisie
+    \item Le système l’enregistre et affiche le résultat de sa saisie \\
+\end{enumerate}
+\end{shaded}
+% #############################################
+\noindent\textsc{\bf{A1 - UC3 :} Associer des pièces jointes au retour d’expérience}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+L’utilisateur veut associer des pièces jointes de différentes catégories à la prestation de maintenance. \\
+
+\noindent\textsc{Utilisateur :} \\
+
+Technicien \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur consulte une prestation de maintenance (A1 - UC1) et demande l’ajout de pièces jointes
+    \item L’utilisateur choisit les pièces jointes qu’il veut associer au dossier et leur affecte une catégorie
+    \item Les pièces jointes sont récupérées depuis le média qu’il utilise (tablette, ordinateur, etc.)
+\end{enumerate}
+
+\end{shaded}
+
+\subsubsection{Services}
+
+\todo{Compléter cette section}
+
+\subsubsection{Identification du bloc applicatif}
+
+\todo{Compléter cette section}
+
+\subsection{Gestion des données}
+
+\subsubsection{Objets métiers}
+
+\todo{Compléter cette section}
+
+\subsubsection{Représentation de la donnée}
+
+\todo{Compléter cette section}
+
+\subsection{Infrastructure}
+
+\subsubsection{Solution retenue}
+
+\todo{Compléter cette section}
+
+\subsubsection{Déploiement de la solution}
+
+\todo{Compléter cette section}
+
+% --------------------------- PERF
+\section{Analyse des Performances (PERF)}% --------------------------- PERF
+% --------------------------- PERF
+
+\subsection{Spécifications fonctionnelles}
+
+\subsubsection{Cas d’utilisations}
+
+\noindent\textsc{\bf{A2 - UC1 :} Calculer le bénéfice d’un contrat}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+L’utilisateur consulte le dossier d’un contrat puis demande l’estimation du bénéfice associé à celui-ci, tout en estimant les potentiels risques, pouvant survenir lors de l’exécution du contrat. \\
+
+\noindent\textsc{Utilisateur :} \\
+
+Commercial \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur recherche le contrat par sa référence ou le nom de la société dans laquelle il intervient
+    \item Le système affiche la liste des contrats pouvant correspondre à la recherche
+    \item L’utilisateur sélectionne son contrat
+    \item Le système affiche l’état actuel du contrat
+    \item L’utilisateur demande l’estimation du bénéfice associé au contrat
+    \item Le système calcule une estimation du bénéfice, en mettant à jour les indicateurs de performance associés au contrat.
+\end{enumerate}
+\end{shaded}
+
+\noindent\textsc{\bf{A2 - UC2 :} Consulter le compte rendu des durées des interventions d’un contrat}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+L’utilisateur consulte le dossier d’un contrat et demande à obtenir un compte rendu sur les durées des interventions effectuées dans le cadre de ce contrat. \\
+
+\noindent\textsc{Utilisateur :}\\
+
+Responsable d’affaires \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur recherche le contrat par sa référence ou le nom de la société dans laquelle il intervient
+    \item Le système affiche la liste des contrats pouvant correspondre à la recherche
+    \item L’utilisateur sélectionne son contrat
+    \item Le système affiche l’état actuel du contrat
+    \item L’utilisateur demande des compte rendu sur les durées d’intervention pour ce contrat
+    \item Le système lui indique le durée moyenne ainsi que les interventions qui ont demandées le moins ainsi que le plus de temps
+\end{enumerate}
+\end{shaded}
+
+\noindent\textsc{\bf{A2 - UC3 :} Consulter les statistiques d’un contrat}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+L’utilisateur consulte le dossier d’un contrat et demande le récapitulatif des indicateurs de performance relatifs au contrat en cours de consultation. \\
+
+\noindent\textsc{Utilisateur :}\\
+
+Responsable d’affaires ou Commercial \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur recherche le contrat par sa référence ou le nom de la société dans laquelle il intervient
+    \item Le système affiche la liste des contrats pouvant correspondre à la recherche
+    \item L’utilisateur sélectionne son contrat
+    \item Le système affiche l’état actuel du contrat
+    \item L’utilisateur demande le récapitulatif des indicateurs de performance de ce contrat
+    \item Le système actualise les indicateurs et génère un rapport
+\end{enumerate}
+\end{shaded}
+
+\subsubsection{Services}
+
+\todo{Compléter cette section}
+
+\subsubsection{Identification du bloc applicatif}
+
+\todo{Compléter cette section}
+
+\subsection{Gestion des données}
+
+\subsubsection{Objets métiers}
+
+\todo{Compléter cette section}
+
+\subsubsection{Représentation de la donnée}
+
+\todo{Compléter cette section}
+
+\subsection{Infrastructure}
+
+\subsubsection{Solution retenue}
+
+\todo{Compléter cette section}
+
+\subsubsection{Déploiement de la solution}
+
+\todo{Compléter cette section}
+
+% --------------------------- RISQUE
+\section{Analyse des Risques (RISQUE)}% --------------------------- RISQUE
+% --------------------------- RISQUE
+
+\subsection{Spécifications fonctionnelles}
+
+\subsubsection{Cas d’utilisations}
+
+\noindent\textsc{\bf{A3 - UC1 :} Calculer l’indice de niveau de sécurité}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+Lors de la mise à jour des informations relatives à un contrat ou à une intervention, l’indice de niveau de sécurité est recalculé en intégrant les nouvelles données. \\
+
+\noindent\textsc{Utilisateur :} \\
+
+Commercial ou Responsable d’affaires \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur recherche le contrat par sa référence ou le nom de la société dans laquelle il intervient
+    \item Le système affiche la liste des contrats pouvant correspondre à la recherche
+    \item L’utilisateur sélectionne son contrat
+    \item Le système affiche l’état actuel du contrat
+    \item L’utilisateur demande le calcul de l’indice de niveau de sécurité du contrat
+    \item Le système recalcule l’indice de niveau de sécurité et l’indique à l’utilisateur
+\end{enumerate}
+\end{shaded}
+
+\noindent\textsc{\bf{A3 - UC2 :} Estimer le niveau de risque d’un contrat}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+Lors de la mise à jour des informations relatives à un contrat, le niveau de risque est recalculé en intégrant les nouvelles données. \\
+
+\noindent\textsc{Utilisateur :} \\
+
+Commercial ou Responsable d’affaires \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur recherche le contrat par sa référence ou le nom de la société dans laquelle il intervient
+    \item Le système affiche la liste des contrats pouvant correspondre à la recherche
+    \item L’utilisateur sélectionne son contrat
+    \item Le système affiche l’état actuel du contrat
+    \item L’utilisateur demande le niveau de risque du contrat
+    \item Le système recalcule le niveau de risque et l’indique à l’utilisateur
+\end{enumerate}
+\end{shaded}
+
+\noindent\textsc{\bf{A3 - UC3 :} Rechercher une solution à un problème référencé}
+\begin{shaded}
+\noindent\textsc{Résumé :}\\
+
+L’utilisateur souhaite trouver une solution à un problème qu’il suppose référencé dans la base de connaissance. \\
+
+\noindent\textsc{Utilisateur :} \\
+
+Technicien ou Responsable d’affaires \\
+
+\noindent\textsc{Scénario :} \\
+\begin{enumerate}
+    \item L’utilisateur saisit des mots clés qui décrivent son problème
+    \item Une liste de solutions contenant les mots clés est présentée à l’utilisateur
+    \item L’utilisateur peut consulter le contenu des différentes solutions afin de trouver une réponse à sa problématique \\
+\end{enumerate}
+\noindent\textsc{Scénarii alternatifs :}\\
+\begin{enumerate}
+    \item Aucune solution ne comporte les mots clés saisis et le système ne connaît apparemment pas de réponse à ce problème.
+    \item L’utilisateur peut demander la création d’une solution dans la base de connaissance relatif à ce problème et proposer une résolution au problème une fois que celui-ci a été résolu.
+\end{enumerate}
+\end{shaded}
+
+\subsubsection{Services}
+
+\todo{Compléter cette section}
+
+\subsubsection{Identification du bloc applicatif}
+
+\todo{Compléter cette section}
+
+\subsection{Gestion des données}
+
+\subsubsection{Objets métiers}
+
+\todo{Compléter cette section}
+
+\subsubsection{Représentation de la donnée}
+
+\todo{Compléter cette section}
+
+\subsection{Infrastructure}
+
+\subsubsection{Solution retenue}
+
+\todo{Compléter cette section}
+
+\subsubsection{Déploiement de la solution}
+
+\todo{Compléter cette section}
