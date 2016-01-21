@@ -126,7 +126,21 @@ Le bloc “Outil REX” utilisant les données relatives aux contrats de mainten
 
 Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci, permettant dans le même temps de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
 
-\todo{Insérer la table des OM REX}
+\begin{table}[H]
+    \begin{tabular}{p{3cm}|p{10cm}|p{3cm}}
+    Objet métier & Description & Cas d'utilisations \\ \hline
+    Contrat & Contrat de maintenance signé par un client de SPIE Sud-Est & A1-UC1 ; A1-UC2 ; A1-UC3 \\ \hline
+    Commande & Commande de la part d’un client d’un ensemble de prestations de maintenance, dans le cadre d’un contrat de maintenance & A1-UC1 ; A1-UC2 ; A1-UC3 \\ \hline
+    Prestation de maintenance & Intervention de maintenance effectuée par un technicien pour un client & A1-UC1 ; A1-UC2 ; A1-UC3 \\ \hline
+    Retour d’expérience & Compte-rendu effectué par un technicien après une intervention de maintenance & A1-UC2 ; A1-UC3 \\ \hline
+    Document & Document numérique pouvant être associé à une prestation de maintenance comme étant une pièce jointe & A1-UC1 ;
+A1-UC3 \\
+    Technicien & Technicien réalisant les prestations de maintenance & A1-UC1 ; A1-UC2 ; A1-UC3 \\ \hline
+    Commercial & Commercial signant les contrats de maintenance & A1-UC1 \\ \hline
+    Responsable d’affaires & Responsable d’affaires suivant le déroulement des contrats de maintenance & A1-UC1 \\
+    \end{tabular}
+    \caption{Tableau des Objets Métiers pour l'Outil REX}
+\end{table}
 
 Le bloc applicatif “Outil REX” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
 
@@ -141,8 +155,6 @@ Concernant l’ontologie à utiliser,  nous proposons d’utiliser l’ontologie
 \todo{Insérer le dessin du vocabulaire IMAMO}
 
 Cette ontologie permettra de définir classer les différentes ressources dans la base de connaissances. Il sera éventuellement nécessaire d’enrichir cette ontologie. Pour administrer cette base de connaissance on pourra utiliser Web Idea Tree\footnote{http://www.webideatree.com/} (WIT).
-
-\todo{footnote manquante sur WIT}
 
 \subsection{Infrastructure}
 
@@ -276,7 +288,18 @@ Les dépendances du bloc “Outil PERF” vis à vis des blocs existant et des n
 
 Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci, permettant dans le même temps de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
 
-\todo{Insérer la table des OM PERF}
+\begin{table}[H]
+    \begin{tabular}{p{3cm}|p{10cm}|p{3cm}}
+    Objet métier & Description & Cas d'utilisations \\ \hline
+    Contrat & Contrat de maintenance signé par un client de SPIE Sud-Est & A2 - UC1 ; A2 - UC2 ; A2 - UC3 \\ \hline
+    Commande & Commande de la part d’un client d’un ensemble de prestations de maintenance, dans le cadre d’un contrat de maintenance & A2 - UC1 ; A2 - UC2 ; A2 - UC3 \\ \hline
+    Prestation de maintenance & Intervention de maintenance effectuée par un technicien pour un client
+ & A2 - UC2 ; A2 - UC3 \\ \hline
+    Commercial & Commercial signant les contrats de maintenance & A2 - UC1 ; A2 - UC3 \\ \hline
+    Responsable d’affaires & Responsable d’affaires suivant le déroulement des contrats de maintenance & A2 - UC2 ; A2 - UC3 \\ 
+    \end{tabular}
+    \caption{Tableau des Objets Métiers pour l'Outil PERF}
+\end{table}
 
 Le bloc applicatif “Outil PERF” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
 
@@ -412,7 +435,19 @@ Concernant la communication de du bloc “Outil RISQUE” avec les blocs existan
 
 Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci, permettant dans le même temps de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
 
-\todo{Insérer la table des OM RISQUE}
+\begin{table}[H]
+    \begin{tabular}{p{3cm}|p{10cm}|p{3cm}}
+    Objet métier & Description & Cas d'utilisations \\ \hline
+    Contrat & Contrat de maintenance signé par un client de SPIE Sud-Est & A3 - UC1 ; A3 - UC2 \\ \hline
+    Commande & Commande de la part d’un client d’un ensemble de prestations de maintenance, dans le cadre d’un contrat de maintenance & A3 - UC1 ; A3 - UC2 \\ \hline
+    Prestation de maintenance & Intervention de maintenance effectuée par un technicien pour un client & A3 - UC1 ; A3 - UC2 \\ \hline
+    Retour d’expérience & Compte-rendu effectué par un technicien après une intervention de maintenance & A3 - UC3 \\ \hline
+    Commercial & Commercial signant les contrats de maintenance & A3 - UC1 ; A3 - UC2 \\ \hline
+    Responsable d’affaires & Responsable d’affaires suivant le déroulement des contrats de maintenance & A3 - UC1 ; A3 - UC3 \\ \hline
+    Technicien & Technicien réalisant les prestations de maintenance & A3 - UC3 \\
+    \end{tabular}
+    \caption{Tableau des Objets Métiers pour l'Outil RISQUE}
+\end{table}
 
 Le bloc applicatif “Outil RISQUE” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
 
