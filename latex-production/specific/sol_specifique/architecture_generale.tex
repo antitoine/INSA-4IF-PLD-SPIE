@@ -8,7 +8,7 @@ Nous proposons donc de baser notre intégration sur le modèle proposé par Data
 
 Cette solution nécessitera néanmoins un travail d’ampleur pour développer les adaptateurs nécessaires pour intégrer les outils existant. Les figures suivantes montrent l’objectif à atteindre à l’issue de la phase de développement. \\
     
-La phase de  développement devra commencer par la concevoir le modèle de données commun (Common Data Model) et de mettre en place le bus. Une fois cette première étape terminée, la suivante consistera à développer les adaptateurs pour les applications existantes. Chaque adaptateur pourra être développer en parallèle car il est spécifique au bloc le concernant. L’ultime étape de développement pourra être la réalisation des nouveaux blocs et de leurs interfaces avec le bus. Ces deux dernières phases pourront être réalisées en parallèle chaque tâche les constituant pouvant elle même être parallélisée. \\
+La phase de  développement devra commencer par la concevoir le modèle de données commun (Common Data Model) et de mettre en place le bus. Une fois cette première étape terminée, la suivante consistera à développer les adaptateurs pour les applications existantes. Chaque adaptateur pourra être développer en parallèle car il est spécifique au bloc le concernant. L’ultime étape de développement pourra être la réalisation des nouveaux blocs et de leurs interfaces avec le bus. Ces deux dernières phases pourront être réalisées en parallèle, chaque tâche les constituant pouvant elle même être parallélisée. \\
 
 \begin{figure}[H]
     \label{fig-bus}
@@ -44,7 +44,7 @@ Le bus n’est destiné qu’à la transmission des messages et ne doit effectue
 
 Le rôle des adaptateurs est d’effectuer les opérations de traduction réciproques permettant de passer d’un message de l’application à un message pouvant circuler sur le bus. \\
 
-Il faut cependant faire attention au format et au nombre de données envoyées sur le bus. Il peut être difficile de définir un format de message suffisamment riche pour permettre à toutes les applications de communiquer de manière efficace l’intégralité des informations qu’elle souhaite diffuser. \\
+Il faut cependant faire attention au format et au nombre de données envoyées sur le bus. Il peut être difficile de définir un format de message suffisamment riche pour permettre à toutes les applications de communiquer de manière efficace avec l’intégralité des informations qu’elle souhaite diffuser. \\
 
 Afin d’éviter un problème de synchronisation, la communication sur bus nécessite de définir quelques règles concernant l’asynchronisme et l’ordre des messages. 
 
@@ -56,4 +56,4 @@ Dans la même optique de mise en confort des utilisateurs, l’usage des nouveau
 
 Comme présenté précédemment, la nouvelle architecture applicative dispose d’une modularité grandement supérieure à l’ancienne organisation du système d’information de SPIE Sud-Est. En effet, la mise en place d’une solution de middleware d’intégration, basée sur un modèle de données commun, permettra par la suite d’ajouter facilement de nouvelles applications et fonctionnalités. \\
 
-Enfin, cette solution permet une maîtrise totale de l’architecture application et de l’indépendance vis à vis des orientations prises par le développement d’un outil tiers. \\
+Enfin, cette solution permet une maîtrise totale de l’architecture applicative et de l’indépendance vis à vis des orientations prises par le développement d’un outil tiers. \\

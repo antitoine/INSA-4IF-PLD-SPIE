@@ -194,7 +194,7 @@ La solution technique retenue pour développer l’application mobile pourra êt
 \begin{shaded}
 \noindent\textsc{Résumé :}\\
 
-L’utilisateur consulte le dossier d’un contrat puis demande l’estimation du bénéfice associé à celui-ci, tout en estimant les potentiels risques, pouvant survenir lors de l’exécution du contrat. \\
+L’utilisateur consulte le dossier d’un contrat puis demande l’estimation du bénéfice associée à celui-ci, tout en estimant les potentiels risques, pouvant survenir lors de l’exécution du contrat. \\
 
 \noindent\textsc{Utilisateur :} \\
 
@@ -215,7 +215,7 @@ Commercial \\
 \begin{shaded}
 \noindent\textsc{Résumé :}\\
 
-L’utilisateur consulte le dossier d’un contrat et demande à obtenir un compte rendu sur les durées des interventions effectuées dans le cadre de ce contrat. \\
+L’utilisateur consulte le dossier d’un contrat et demande à obtenir un compte rendu sur les durées des prestations de maintenance effectuées dans le cadre de ce contrat. \\
 
 \noindent\textsc{Utilisateur :}\\
 
@@ -227,8 +227,8 @@ Responsable d’affaires \\
     \item Le système affiche la liste des contrats pouvant correspondre à la recherche
     \item L’utilisateur sélectionne son contrat
     \item Le système affiche l’état actuel du contrat
-    \item L’utilisateur demande des compte rendu sur les durées d’intervention pour ce contrat
-    \item Le système lui indique le durée moyenne ainsi que les interventions qui ont demandées le moins ainsi que le plus de temps
+    \item L’utilisateur demande un compte rendu sur les durées d’intervention pour ce contrat
+    \item Le système lui indique la durée moyenne ainsi que les prestations de maintenance qui ont demandées le moins ainsi que le plus de temps
 \end{enumerate}
 \end{shaded}
 
@@ -325,7 +325,7 @@ Les différents cas d’utilisation décrits précédemment permettent d’ident
     \caption{Tableau des Objets Métiers pour l'Outil PERF}
 \end{table}
 
-Le bloc applicatif “Outil PERF” utilisant ces différents objets métier, leurs relations peuvent être modélisée selon le modèle conceptuel de données ci-dessous.
+Le bloc applicatif “Outil PERF” utilisant ces différents objets métier, leurs relations peuvent être modélisées selon le modèle conceptuel de données ci-dessous.
 
 \begin{figure}[H]
     \label{fig-om-perf}
@@ -335,7 +335,7 @@ Le bloc applicatif “Outil PERF” utilisant ces différents objets métier, le
 
 \subsubsection{Représentation de la donnée}
 
-Toutes les données stockées concernant les contrats devront pouvoir être accédées par l’application qui sera chargée d’agréger ces données pour réaliser des statistiques qui alimenteront les différents tableaux de bord. La mise en place d’un entrepôt de données alimenté par les autres applicatifs doit être envisagée pour aller dans ce sens. \\
+Toutes les données stockées concernant les contrats devront pouvoir être accessible par l’application qui sera chargée d’agréger ces données pour réaliser des statistiques qui alimenteront les différents tableaux de bord. La mise en place d’un entrepôt de données alimenté par les autres applicatifs doit être envisagé pour aller dans ce sens. \\
 
 Il sera également nécessaire de concevoir les hypercubes associés afin de pouvoir exploiter ces données. Pour parvenir à ce résultat, SPIE devra faire l’acquisition des outils permettant de manipuler ces données, Pentaho par exemple. 
 
@@ -343,7 +343,7 @@ Il sera également nécessaire de concevoir les hypercubes associés afin de pou
 
 Le stockage des données nécessitera une infrastructure conséquente garantissant une bonne qualité de service et permettant éventuellement des opérations de réplication pour protéger SPIE d’une perte importante de données. \\
 
-Les dispositions à prendre pour mettre en place une telle infrastructure sont les suivantes. Acquérir plusieurs serveurs de données et les configurer de sorte à mettre en place la réplication. Concernant la localisation de ces serveurs, il serait judicieux de les placer en divers endroits si possible avec des alimentation électriques distinctes et redondantes. 
+Les dispositions à prendre pour mettre en place une telle infrastructure sont les suivantes : acquérir plusieurs serveurs de données et les configurer de sorte à mettre en place la réplication. Concernant la localisation de ces serveurs, il serait judicieux de les placer dans divers endroits si possible avec des alimentations électriques distinctes et redondantes. 
 
 % --------------------------- RISQUE
 \section{Analyse des Risques (RISQUE)}% --------------------------- RISQUE
@@ -457,7 +457,7 @@ Le bloc “Outil RISQUE”, comme les deux précédents, requiert un accès à l
     \caption{Diagramme des cas d'utilisation de l'outil RISQUE}
 \end{figure}
 
-Concernant la communication de du bloc “Outil RISQUE” avec les blocs existant et les deux blocs introduits précédemment nous constatons que les liens sont similaires. En effet, ce module requiert des informations provenant des autres blocs et notamment des connaissances recueillies auprès des différents acteurs humains par le biais des outils. Il est important de noter que cela se répercutera également sur l’architecture applicative et l’infrastructure à développer. Certains éléments de ces architectures pourrons évidemment être mutualisés pour répondre au besoin. La mutualisation présente de nombreux avantages, en particuliers sur le plan financier.
+Concernant la communication de du bloc “Outil RISQUE” avec les blocs existant et les deux blocs introduits précédemment nous constatons que les liens sont similaires. En effet, ce module requiert des informations provenant des autres blocs et notamment des connaissances recueillies auprès des différents acteurs humains par le biais des outils. Il est important de noter que cela se répercutera également sur l’architecture applicative et l’infrastructure à développer. Certains éléments de ces architectures pourrons évidemment être mutualisés pour répondre au besoin. La mutualisation présente de nombreux avantages, en particulier sur le plan financier.
 
 \begin{figure}[H]
     \label{fig-dep-risque}
@@ -469,7 +469,7 @@ Concernant la communication de du bloc “Outil RISQUE” avec les blocs existan
 
 \subsubsection{Objets métiers}
 
-Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci, permettant dans le même temps de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
+Les différents cas d’utilisation décrits précédemment permettent d’identifier les objets métiers qui sont concernés par ceux-ci. Permettant aussi de compléter le modèle conceptuel de données correspondant à la solution spécifique proposée.
 
 \begin{table}[H]
     \begin{tabular}{p{3cm}|p{10cm}|p{3cm}}
@@ -477,7 +477,7 @@ Les différents cas d’utilisation décrits précédemment permettent d’ident
     Contrat & Contrat de maintenance signé par un client de SPIE Sud-Est & A3 - UC1 ; A3 - UC2 \\ \hline
     Commande & Commande de la part d’un client d’un ensemble de prestations de maintenance, dans le cadre d’un contrat de maintenance & A3 - UC1 ; A3 - UC2 \\ \hline
     Prestation de maintenance & Intervention de maintenance effectuée par un technicien pour un client & A3 - UC1 ; A3 - UC2 \\ \hline
-    Retour d’expérience & Compte-rendu effectué par un technicien après une intervention de maintenance & A3 - UC3 \\ \hline
+    Retour d’expérience & Compte-rendu effectué par un technicien après une prestation de maintenance & A3 - UC3 \\ \hline
     Commercial & Commercial signant les contrats de maintenance & A3 - UC1 ; A3 - UC2 \\ \hline
     Responsable d’affaires & Responsable d’affaires suivant le déroulement des contrats de maintenance & A3 - UC1 ; A3 - UC3 \\ \hline
     Technicien & Technicien réalisant les prestations de maintenance & A3 - UC3 \\
@@ -495,7 +495,7 @@ Le bloc applicatif “Outil RISQUE” utilisant ces différents objets métier, 
 
 \subsubsection{Représentation de la donnée}
 
-Du point de vue de la gestion des données, celle-ci est étroitement liée à l’axe concernant les REX. En effet, la prédiction des risques nécessite de se baser sur des connaissances accumulées au cours des différentes activités menées dans le cadre de ces projets pour anticiper, dans la mesure du possible, les problèmes qui peuvent être rencontrés lors du déroulement du projet.
+Du point de vue de la gestion des données, celle-ci est étroitement liée à l’axe concernant les REX. En effet, la prédiction des risques nécessite de se baser sur des connaissances accumulées au cours des différentes activités menées dans le cadre de ces projets pour anticiper, dans la mesure du possible, les problèmes qui peuvent être rencontrés lors du déroulement de projet.
 
 Nous conseillons donc de vous reporter au paragraphe correspondant dans la section de l’axe d’amélioration associé.
 
